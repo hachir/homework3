@@ -1,0 +1,60 @@
+body {
+font-size: 1.2em;
+background-color:gray;
+background-size: cover;
+}
+#container{
+max-width: 80;
+margin: 0 auto;
+text-align: center;
+border-radius: 10px;
+padding: 10px;
+background: #602040;
+opacity:0.98 ;
+}
+.panel{
+max-width:80% ;
+margin: 20px auto;
+border-radius: 10px;
+padding: 10px;
+background: #eee;
+}
+button{
+background:orangered;
+height: 3em;
+width: 80%;
+margin-bottom: 1.5em;
+border-radius: 10px;
+color: white;
+font-size: 0.8em;
+}
+input{
+border-radius: 10px;
+width: 80%;
+height: 4em;
+text-align: center;
+}
+.activeButton{
+
+    background:red;
+
+}
+.panle h3 {
+    color:skyblue;
+}
+.panel p{
+    font: 200 26px/1.3 'Arizonia', Helvetica, sans-serif;
+    color:black;
+    text-shadow: 4px 4px 0px rgba(6, 66, 66, 0.1);
+}
+.go{
+    
+    background:green;
+}
+.ha{
+    background: blue;
+}
+.ff{
+    color: wheat;
+    font-family: Arial, Helvetica, sans-serif;
+}

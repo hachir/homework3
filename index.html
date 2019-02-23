@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/style.css">
+    <title> Hayder-Achir-"play"</title>
+</head>
+
+<body onload="init()">
+    <div id="container">
+        <img src="imgs/11.jpeg" width="800px" height="100px">
+        <div class="panel">
+            <h2>I have a randomn number <br> between 1-100</h2>
+            <h3>dare to gusee?</h3>
+            <hr>
+            <p>select difficulty setting;:</p>
+            <button id="easyBtn" onclick="easymode()" class="ha">Easy: Guess in 10 attempts</button>
+            <button id="hardBtn" onclick="hardmode()" class="">Hard: Guess in 5 attempts </button>
+            <button id="newGameButton" onclick="newGame()" class="go">New Game</button>
+        </div>
+        <div class="panle">
+            <h3 id="textOutput"> Enter your guess below &amp;press enter</h3>
+            <input type="number" id="inputBox" onchange="compareGuess()">
+            <div class="ff">
+                <p> Number of previous attempts:<span id="attempts"></span></p>
+            </div>
+            <div class="panel">
+                <p> your previous guesses:</p>
+                <p id="guesslog"></p>
+            </div>
+        </div>
+        <script src="script.js"></script>
+</body>
+
+</html>
