@@ -13,8 +13,8 @@
     <div id="container">
         <img src="imgs/11.jpeg" width="800px" height="100px">
         <div class="panel">
-            <h2>I have a randomn number <br> between 1-100</h2>
-            <h3>dare to gusee?</h3>
+            <h2>I have a random number <br> between 1-100</h2>
+            <h3>dare to guess?</h3>
             <hr>
             <p>select difficulty setting;:</p>
             <button id="easyBtn" onclick="easymode()" class="ha">Easy: Guess in 10 attempts</button>
@@ -23,7 +23,7 @@
         </div>
         <div class="panle">
             <h3 id="textOutput"> Enter your guess below &amp;press enter</h3>
-            <input type="number" id="inputBox" onchange="compareGuess()">
+            <input type="number" id="inputBox" onchange="compareGuess()" autocomplete="off">
             <div class="ff">
                 <p> Number of previous attempts:<span id="attempts"></span></p>
             </div>

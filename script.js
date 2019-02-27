@@ -7,6 +7,7 @@ function gameEnded() {
     document.getElementById("newGameButton").style.display = "inline";
     document.getElementById("easyBtn").style.display = "none";
     document.getElementById("hardBtn").style.display = "none";
+    document.getElementById("inputBox").setAttribute("readonly","readonly");
     userGuesslog = [];
     console.log("userlog", userGuesslog);
     document.getElementById("guesslog").innerHTML = userGuesslog;
@@ -53,17 +54,22 @@ function compareGuess() {
             document.getElementById("textOutput").innerHTML = "your guess is too low";
             document.getElementById("inputBox").value = "";
         } else {
-            document.getElementById("textOutput").innerHTML = "you win!";
+            document.getElementById("textOutput").innerHTML = "win! you got it in "+attempts+ "attempts";
+            document.getElementById("container").style.backgroundColor="green";
+            gameEnded();
         }
     } else {
         if (userGuess > computerGuess) {
-            document.getElementById("textOutput").innerHTML = "you lose!";
+            document.getElementById("textOutput").innerHTML = "you lose!" +"<br> the number was" + computerGuess;
+            document.getElementById("container").style.backgroundColor="#e82c4e";
             gameEnded();
         } else if (userGuess < computerGuess) {
-            document.getElementById("textOutput").innerHTML = "you lose!";
+            document.getElementById("textOutput").innerHTML = "you lose!" +"<br> the number was" + computerGuess;
+            document.getElementById("container").style.backgroundColor="#e82c4e";
             gameEnded();
         } else {
-            document.getElementById("textOutput").innerHTML = "you win!";
+            document.getElementById("textOutput").innerHTML = "win! you got it in "+attempts+ "attempts";
+            document.getElementById("container").style.backgroundColor="green";
             gameEnded();
         }
 
